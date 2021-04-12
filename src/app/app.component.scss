@@ -1,0 +1,17 @@
+@use '../app/shared/styles/utilities/page';
+
+.page {
+	min-height: 100vh;
+	display: grid;
+	grid-template-areas: "header" "content" "footer";
+	grid-template-rows: auto 1fr auto;
+}
+
+.header {
+	grid-area: "header";
+	margin-bottom: 3.125rem;}
+
+.footer {
+	grid-area: "footer";
+	margin-bottom: 6.25rem;
+}

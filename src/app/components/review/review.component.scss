@@ -1,0 +1,66 @@
+@use '../../shared/styles/base/typography';
+@use '../../shared/styles/components/icons';
+
+.review {
+	display: flex;
+}
+
+.review__profile {
+	display: flex;
+	flex-direction: column;
+	margin-right: 6.25rem;
+}
+
+.review__photo {
+	width: 100%;
+	max-width: 37.5rem;
+	height: 100%;
+	max-height: 21.875rem;
+	border-top-right-radius: 31px;
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	overflow: hidden;
+
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.review__info {
+	padding: 1.875rem 2.5rem;
+	border-radius: 0 0 20px 20px;
+	align-self: flex-end;
+	background-color: rgba(#EFD6C7, .3);
+}
+
+.review__name,
+.review__sub-title {
+	color: var(--clr-primary);
+}
+
+.review__profession {
+	word-wrap: break-word;
+	color: var(--clr-title-text);
+}
+
+.review__content {
+	width: 100%;
+	max-width: 27.8125rem;
+	margin-top: 4rem;
+}
+
+.review__icon {
+	margin-top: 2rem;
+}
+
+.review__sub-title {
+	margin-bottom: 0.625rem;
+}
+
+.review__text {
+	color: var(--clr-main-text);
+}

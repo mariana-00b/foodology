@@ -1,0 +1,42 @@
+@use '../../shared/styles/components/buttons' as *;
+@use '../../shared/styles/base/typography' as *;
+@use '../../shared/styles/utilities/container' as *;
+@use '../../shared/styles/components/icons';
+
+.header__inner {
+  height: 6.25rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+	font-family: 'Poppins Bold';
+	font-size: var(--fs-400);
+	line-height: 1.5;
+	color: var(--clr-title-text);
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__links {
+  li {
+    display: inline;
+  }
+}
+
+.header__link {
+	margin-left: 3.125rem;
+	font-family: 'Poppins SemiBold';
+	font-size: var(--fs-300);
+	color: var(--clr-title-text);
+	line-height: 1.5;
+}
+
+.header__button {
+	margin-left: 3.125rem;
+}

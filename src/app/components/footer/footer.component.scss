@@ -1,0 +1,80 @@
+@use '../../shared/styles/utilities/container' as *;
+@use '../../shared/styles/components/buttons' as *;
+@use '../../shared/styles/components/icons';
+
+.footer__inner {
+	height: 13.313rem;
+
+	display: grid;
+	grid-template-columns: repeat(5, minmax(120px, 1fr));
+	grid-template-rows: 8.5rem 1fr;
+	grid-template-areas: 
+		"s s . f h"
+		"c c . p t";
+
+	color: var(--clr-footer-text);
+	font-size: var(--fs-200);
+	line-height: 1.8;
+}
+
+.footer__socials,
+.footer__copyright,
+.footer__policy,
+.footer__terms {
+	align-self: end;
+}
+
+.footer__socials {
+	grid-area: s;
+}
+
+.footer__social {
+	margin-right: 1.563rem;
+
+	&:hover,
+	&:focus {
+		svg {
+			fill: var(--clr-hover);
+		}
+	}
+}
+
+.footer__copyright {
+	grid-area: c;
+}
+
+.footer__list-foods,
+.footer__list-help,
+.footer__policy,
+.footer__terms {
+	justify-self: center;
+}
+
+.footer__list-foods {
+	grid-area: f;
+}
+
+.footer__list-help {
+	grid-area: h;
+}
+
+.footer__list-title {
+	display: inline-block;
+	font-family: 'Poppins SemiBold';
+	font-size: var(--fs-300);
+	line-height: 2;
+	margin-bottom: 7px;	
+}
+
+.footer__list-item {
+	display: inline-block;
+	margin-bottom: 15px;
+}
+
+.footer__policy {
+	grid-area: p;
+}
+
+.footer__terms {
+	grid-area: t;
+}

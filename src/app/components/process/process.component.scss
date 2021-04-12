@@ -1,0 +1,58 @@
+@use '../../shared/styles/utilities/container';
+@use '../../shared/styles/base/typography';
+
+.process__sup-title,
+.process__title {
+	text-align: center;
+}
+
+.process__title {
+	margin-bottom: 6.25rem;
+}
+
+.process__content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.step {
+	position: relative;
+	width: 100%;
+	max-width: 426px;
+	padding: 0 0 44px 3.625rem;
+
+	&:not(:last-child) {
+		margin-bottom: 68.5px;
+	}
+
+	&:not(:last-child):after {
+		display: inline;
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		border: 1px solid #DFE1E6;
+	}
+}
+
+.step__counter {
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: var(--clr-primary);
+}
+
+.step__title {
+	margin-bottom: 20px;
+}
+
+.process__image {
+	border-radius: 1.25rem;
+	overflow: hidden;
+
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}

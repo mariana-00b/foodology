@@ -1,0 +1,85 @@
+.icon_theme {
+	&_winter {
+		fill: var(--clr-white-primary);
+	}
+
+	&_night {
+		fill: var(--clr-footer-text);
+	}
+
+	&_citrus {
+		fill: var(--clr-primary);
+	}
+
+	&_citrus-light {
+		fill: rgba(hsl(13, 99%, 65%), 0.7);
+	}
+}
+
+.icon_size {
+	&_arrow-previous,
+	&_arrow-next {
+		width: 36px;
+		height: 36px;
+	}
+
+	&_bucket {
+		width: 18px;
+		height: 19px;
+	}
+
+	&_cocktail {
+		width: 25px;
+		height: 35px;
+	}
+
+	&_facebook {
+		width: 10px;
+		height: 18px;
+	}
+	
+	&_fish {
+		width: 35px;
+		height: 35px;
+	}
+	
+	&_google {
+		width: 18px;
+		height: 18px;
+	}
+
+	&_ice-cream {
+		width: 21px;
+		height: 35px;
+	}
+
+	&_instagram {
+		width: 20px;
+		height: 20px;
+	}
+
+	&_quote {
+		width: 30px;
+		height: 19px;
+	}
+
+	&_star {
+		width: 32px;
+		height: 32px;
+	}
+
+	&_twitter {
+		width: 20px;
+		height: 16px;
+	}
+
+	&_watermelon {
+		width: 41px;
+		height: 20px;
+	}
+
+	&_card-square {
+		width: 110px;
+		height: 110px;
+	}
+}

@@ -1,0 +1,93 @@
+@use '../../shared/styles/components/buttons';
+@use '../../shared/styles/components/icons';
+
+.menu {
+	background-color: hsl(15, 100%, 97%);
+}
+
+.menu__inner {
+	padding: 6.25rem 8.75rem 10.625rem;
+}
+
+.menu__sup-title,
+.menu__title,
+.menu__description {
+	text-align: center;
+	max-width: 29.625rem;
+	margin: 0 auto;
+}
+
+.menu__title {
+	line-height: 1.5;
+}
+
+.menu__content {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 3.125rem;
+}
+
+.menu__photo {
+	width: 100%;
+	max-width: 35.313rem;
+	border-radius: 25px;
+	overflow: hidden;
+
+	img {
+		width: 100%;
+	}
+}
+
+.menu__categories {
+	width: 100%;
+	max-width: 31.063rem;
+	text-align: right;
+}
+
+.menu__categories-title {
+	grid-area: title;
+	margin-bottom: 20px;
+}
+
+.menu__categories-description {
+	grid-area: descr;
+	margin-bottom: 45px;
+}
+
+.menu__category {
+	display: grid;
+	grid-template-columns: 15rem 4.25rem;
+	grid-template-areas:
+	"title icon"
+	"descr icon"
+	;
+	column-gap: 2.188rem;
+	justify-content: end;
+
+	margin-bottom: 3.063rem;
+
+	&:not(:last-of-type) {
+		margin-bottom: 2.563rem;
+	}
+}
+
+.menu__category-icon {
+	grid-area: icon;
+	display: inline-block;
+}
+
+.menu__category-icon {
+	width: 4.25rem;
+	height: 4.25rem;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 50%;
+	background-color: var(--clr-primary);
+}
+
+.menu__button-arrow {
+	margin-right: 1.5rem;
+}

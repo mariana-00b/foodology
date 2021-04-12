@@ -1,0 +1,55 @@
+@use '../../shared/styles/components/cards' as *;
+@use '../../shared/styles/components/buttons' as *;
+@use '../../shared/styles/utilities/container' as *;
+@use '../../shared/styles/components/icons' as *;
+
+.commitment__title {
+	margin-bottom: 25px;
+}
+
+.commitment__text {
+	width: 100%;
+	max-width: 31.25rem;
+}
+
+.commitment__content {
+	display: flex;
+	margin-top: 50px;
+}
+
+.commitment__card {
+	margin-right: 50px;
+}
+
+.delivery__title {
+	margin-bottom: 20px;
+}
+
+.delivery__text {
+	margin-bottom: 30px;
+}
+
+.delivery__counter,
+.delivery__time {
+	margin-bottom: 6px;
+
+	color: var(--clr-primary);
+}
+
+.delivery__counter {
+	font-family: 'Poppins Bold';
+	font-size: 3.375rem;
+	line-height: 1.5;
+	letter-spacing: .5px;
+}
+
+.delivery__time {
+	font-family: 'Poppins SemiBold';
+	font-size: 1.25rem;
+	line-height: 1.5;
+}
+
+
+.delivery__hint {
+	margin-bottom: 40px;
+}

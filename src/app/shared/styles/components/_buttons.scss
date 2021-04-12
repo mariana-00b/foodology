@@ -1,0 +1,142 @@
+.button {
+	font-family: 'Poppins SemiBold';
+	letter-spacing: .5px;
+}
+
+.button_style_primary-large {
+	color: var(--clr-white-primary);
+	background-color: var(--clr-primary);
+	padding: 0.875rem 1.25rem;
+	border-radius: 30px;
+	font-size: 16px;
+	line-height: 1.8em;
+	transition: background-color .1s ease-in;
+
+	&:hover {
+		background-color: var(--clr-hover);
+	}
+
+	&:focus {
+		border: 3px solid var(--clr-focus);
+		padding: 0.6875rem 1.0625rem;
+	}
+
+	&:disabled {
+		background-color: var(--clr-disabled);
+	}
+}
+
+.button_style_sign-in {
+	font-size: var(--fs-300);
+	color: var(--clr-primary);
+	width: 6rem;
+	height: 2.75rem;
+
+	border: 2px solid var(--clr-primary);
+	border-radius: 22px;
+
+	transition: background-color .1s ease-in;
+
+	&:hover,
+	&:focus {
+		background-color: var(--clr-primary);
+		color: var(--clr-white-primary);
+	}
+
+	&:active {
+		background-color: var(--clr-hover);
+		color: var(--clr-white-primary);
+	}
+}
+
+.button_style_bucket {
+	width: 2.813rem;
+	height: 2.813rem;
+	background-color: var(--clr-primary);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: background-color .1s ease-in;
+
+	&:hover {
+		background-color: var(--clr-hover);
+	}
+
+	&:focus {
+		border: 3px solid var(--clr-focus);
+	}
+
+	&:disabled {
+		background-color: var(--clr-disabled);
+	}
+}
+
+
+// ! Достилізувати кнопку для outline і глянути на кнопку sign-in
+.button_style_outline {
+	padding: 0.875rem 1.5rem;
+	color: var(--clr-primary);
+	border: 2px solid var(--clr-primary);
+	border-radius: 25px;
+
+	transition: background-color .1s ease-in;
+
+
+	&:hover,
+	&:focus {
+		background-color: var(--clr-primary);
+		color: var(--clr-white-primary);
+	}
+
+	&:active {
+		background-color: var(--clr-hover);
+		color: var(--clr-white-primary);
+	}
+}
+
+.button_style_card {
+	width: 100%;
+	color: var(--clr-white-primary);
+	background-color: hsl(14, 89%, 58%);
+	max-width: 7.875rem;
+	height: 3.625rem;
+	border-radius: 25px;
+	margin-top: 20px;
+}
+
+.button-arrow {
+	width: 2.25rem;
+	height: 2.25rem;
+	border-radius: 50%;
+
+	&:hover {
+		svg {
+			fill: var(--clr-hover);
+		}
+	}
+
+	&:focus {
+		box-shadow: 0 0 2px 0 var(--clr-focus);
+	}
+
+	&:disabled {
+		svg {
+			fill: #FFBFAE;
+		}
+	}
+}
+
+a {
+	color: inherit;
+	transition: color .1s ease-in;
+
+	&:hover {
+		color: var(--clr-hover);
+	}
+
+	&:focus,
+	&:active {
+		color: var(--clr-focus);
+	}
+}
